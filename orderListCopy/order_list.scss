@@ -1,0 +1,179 @@
+$main-color: #FB570B;
+$sub-color: #FC8F05;
+$gray-color: #C3C7CF;
+.title {
+    width: 20%;
+    margin: 0 auto;
+    justify-content: center;
+    .titleFirst {
+        color: $main-color;
+    }
+}
+.Nav-title {
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    .detailPath {
+        .homeIcon {
+            font-size: 22px;
+        }
+        .myOrder {
+            color: $main-color;
+        }
+    }
+    
+    .statusSearch {
+        .orderStatus {
+            display: flex;
+            justify-content: end;
+            .btnGroup {
+                display: flex;
+                .btnFirst {
+                    border-radius: 0;
+                    width: 80px;
+                    height: 35px;
+                    border: 1px solid $sub-color;
+                    background-color: $sub-color;
+                    &:hover{  
+                        background-color:hwb(34 9% 0%);
+                    }
+                }
+                .btnSecond {
+                    border-radius: 0;
+                    width: 80px;
+                    height: 35px;
+                    border: 1px solid $gray-color;
+                    background-color: $gray-color;
+                    margin-right: 0 !important;
+                    &:hover{  
+                        background-color:hsl(222, 8%, 74%);
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    
+    .inputSearch {
+        width: 300px !important;
+    }
+    .btnSearch {
+        width: 80px;
+        height: 40px;
+        font-weight: bold;
+        color: white;
+        background-color: $main-color;
+        &:hover{  
+            background-color:hsl(19, 91%, 50%);
+            color: white;
+        }
+    }
+}
+.tableFrame {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-bottom: 60px;
+    .tableLeft {
+        width: 20%;
+        ul {
+            list-style: none;
+            padding: 0px;
+            li {
+                margin-bottom: 40px;
+                .btnLink {
+                    padding: 15px 20px;
+                    text-decoration: none;
+                    border-radius: 13px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: hsla(0, 0%, 0%, 0.74);
+                }
+                .btnHover {
+                    background-color: white;
+                    &:hover{  
+                        background-color: $sub-color;
+                    }
+                }
+            }
+            
+        }
+    }
+    .tableRight {
+        width: 80%;
+    }
+}
+
+table {
+    width: 100%;
+    tr {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.326);
+        th {
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.482);
+            text-align: center;
+            font-size: 18px;
+        }
+        td{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.482);
+            font-weight: bold;
+            font-size: 18px;
+            padding: 15px 5px;
+            .btnDetail {
+                border: 1px solid $sub-color;
+                border-radius: 13px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 125px;
+                font-weight: bold;
+                font-size: 18px;
+                background-color: $sub-color;
+                color: hsla(0, 0%, 0%, 0.74);
+                    &:hover{  
+                        background-color:hwb(34 9% 0%);
+                    }
+                    .btnContent {
+                        text-decoration: none;
+                        color: black;
+                    }
+            }
+        }
+        
+        .OrderNumber {
+            color: $main-color;
+        }
+    }
+    .borderNone {
+        border-bottom: 1px solid transparent;
+    }
+    .OrderSpecial td{
+        color: black;
+        .btnInvalid {
+            border: 2px solid $sub-color;
+            border-radius: 13px;
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 125px;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: hsla(0, 0%, 0%, 0.74);
+            &:hover{  
+                background-color: hwb(34 9% 0%);
+            }
+        }
+    }
+}
+.paginatedOutside {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+
+
